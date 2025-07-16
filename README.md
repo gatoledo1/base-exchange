@@ -11,4 +11,4 @@
 - Testes unitários funcionavam até a adição da lib "@mui/x-data-grid" que controla a tabela, decidi não investir tempo nessa correção do problema
 
 ---
-*PS: O prazo estava bom, mas minha rotina e muitas coisas ruins aconteceram essa semana, fora minha mudança de cidade, minha casa estava caotica, fiz o melhor que pude, com o tempo que tive.*
+*PS: O prazo estava bom, mas minha rotina e muitos imprevistos (ruins) que aconteceram nessa semana me atrapalharam. Fiz o melhor que pude com o tempo que tive.*
