@@ -1,69 +1,14 @@
-# React + TypeScript + Vite
+# Resalvas quanto ao uso de IA
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Devido ao pouquissimo tempo disponível para atuar em outra atividade, necessitei utilizar o GPT para acelerar meu desenvolvimento
+- Atuei nesse teste entre 3 e 4h no total, o GPT gerou o start do projeto para mim, layout com MUI e testes unitarios simples
 
-Currently, two official plugins are available:
+# Do projeto:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Fluxos criados conforme solicitado para o teste
+- Formulário de filtros criado com pattern Factory + Strategy (DynamicForm), orientado a metadado, como conversamos na entrevista
+- Projeto criado com Vite, Vitest, MUI e Typescript (não está com tipagens 100%)
+- Testes unitários funcionavam até a adição da lib "@mui/x-data-grid" que controla a tabela, decidi não investir tempo nessa correção do problema
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+*PS: O prazo estava bom, mas minha rotina e muitas coisas ruins aconteceram essa semana, fora minha mudança de cidade, minha casa estava caotica, fiz o melhor que pude, com o tempo que tive.*
