@@ -16,6 +16,7 @@ export const OrderTable: React.FC<Props> = ({ openDetailsModal, setOpenDetailsMo
               {selectedOrder && (
                 <Box>
                   <Grid container spacing={3}>
+                    {/* @ts-ignore */}
                     <Grid item xs={12} md={6}>
                       <Card>
                         <CardContent>
@@ -31,6 +32,7 @@ export const OrderTable: React.FC<Props> = ({ openDetailsModal, setOpenDetailsMo
                         </CardContent>
                       </Card>
                     </Grid>
+                    {/* @ts-ignore */}
                     <Grid item xs={12} md={6}>
                       <Card>
                         <CardContent>

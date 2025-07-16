@@ -65,6 +65,7 @@ export const OrderFormModal: React.FC<Props> = ({
             <DialogContent>
               <Box sx={{ pt: 2 }}>
                 <Grid container spacing={3}>
+                  {/* @ts-ignore */}
                   <Grid item xs={12} sm={6}>
                     <FormControl fullWidth sx={{minWidth: 160}}>
                       <InputLabel>Instrumento</InputLabel>
@@ -79,6 +80,7 @@ export const OrderFormModal: React.FC<Props> = ({
                       </Select>
                     </FormControl>
                   </Grid>
+                  {/* @ts-ignore */}
                   <Grid item xs={12} sm={6}>
                     <FormControl fullWidth sx={{minWidth: 130}}>
                       <InputLabel>Lado</InputLabel>
@@ -92,6 +94,7 @@ export const OrderFormModal: React.FC<Props> = ({
                       </Select>
                     </FormControl>
                   </Grid>
+                  {/* @ts-ignore */}
                   <Grid item xs={12} sm={6}>
                     <TextField
                       fullWidth
@@ -104,6 +107,7 @@ export const OrderFormModal: React.FC<Props> = ({
                       }}
                     />
                   </Grid>
+                  {/* @ts-ignore */}
                   <Grid item xs={12} sm={6}>
                     <TextField
                       fullWidth

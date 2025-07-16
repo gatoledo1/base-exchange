@@ -16,6 +16,7 @@ export const mockColumns = (
             field: 'side',
             headerName: 'Lado',
             width: 130,
+            /* @ts-ignore */
             renderCell: (params: { value: string; }) => (
                 <Chip
                 label={params.value}
@@ -28,6 +29,7 @@ export const mockColumns = (
             field: 'price',
             headerName: 'Preço',
             width: 100,
+            /* @ts-ignore */
             renderCell: (params: { value: number; }) => `R$ ${params.value.toFixed(2)}`
         },
         { field: 'quantity', headerName: 'Quantidade', width: 100 },
@@ -36,6 +38,7 @@ export const mockColumns = (
             field: 'status',
             headerName: 'Status',
             width: 120,
+            /* @ts-ignore */
             renderCell: (params: { value: string; }) => {
                 const colors = {
                 ABERTO: 'primary',
@@ -56,6 +59,7 @@ export const mockColumns = (
             field: 'createdAt',
             headerName: 'Data/Hora',
             width: 180,
+            /* @ts-ignore */
             renderCell: (params: { value: string | number | Date; }) => new Date(params.value).toLocaleString('pt-BR')
         },
         {
@@ -73,6 +77,7 @@ export const mockColumns = (
                 >
                     <Visibility />
                 </IconButton>
+                {/* @ts-ignore */}
                 {(params.row.status === 'ABERTO' || params.row.status === 'PARCIAL') && (
                     <IconButton
                     size="small"

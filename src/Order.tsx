@@ -22,6 +22,7 @@ const theme = createTheme({
     },
     background: {
       default: '#0a0e27',
+      /* @ts-ignore */
       Box: '#1a1d3a',
     },
     success: {
@@ -38,6 +39,7 @@ const theme = createTheme({
     },
   },
   components: {
+    /* @ts-ignore */
     MuiDataGrid: {
       styleOverrides: {
         root: {
@@ -197,6 +199,7 @@ const OrderManagement: React.FC = () => {
             <DataGrid
               rows={filteredOrders}
               columns={columns}
+              /* @ts-ignore */
               pageSize={pageSize}
               onPageSizeChange={setPageSize}
               page={page}

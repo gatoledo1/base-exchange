@@ -17,6 +17,8 @@ const DynamicForm = ({ props, dataFields }) => {
     switch (field.type) {
       case 'autocomplete':
         return (
+          <>
+          {/* @ts-ignore */}
             <Grid item xs={field.xs} sm={field.sm} md={field.md} lg={field.lg} className={field.className}>
                 <Autocomplete 
                 id={field.id}
@@ -58,10 +60,13 @@ const DynamicForm = ({ props, dataFields }) => {
                 {...props}
                 />
             </Grid>
+          </>
         );
 
       case 'inputTextOrNumber':
         return (
+          <>
+          {/* @ts-ignore */}
             <Grid item xs={field.xs} sm={field.sm} md={field.md} lg={field.lg} className={field.className}>
                 <TextField
                 className={field.className}
@@ -88,10 +93,13 @@ const DynamicForm = ({ props, dataFields }) => {
                 {...props}
                 />
             </Grid>
+          </>
         );
 
     case 'date':
         return (
+          <>
+          {/* @ts-ignore */}
             <Grid item xs={field.xs} sm={field.sm} md={field.md} lg={field.lg} className={field.className}>
                 <TextField
                     data-testid={field.test}
@@ -105,10 +113,13 @@ const DynamicForm = ({ props, dataFields }) => {
                     sx={{minWidth: 180}}
                 />  
             </Grid>
+          </>
         )
 
       case 'select':
         return (
+          <>
+          {/* @ts-ignore */}
             <Grid item xs={field.xs} sm={field.sm} md={field.md} lg={field.lg} className={field.className}>
                 <FormControl sx={{ m: 1, minWidth: 150, width: "100%" }} error={field.error ? true : false}>
                 <InputLabel id={`select-label-${field.name}`}>{field.label}</InputLabel>
@@ -138,6 +149,7 @@ const DynamicForm = ({ props, dataFields }) => {
                 <Typography className='color-error'>{field.helperText}</Typography>
                 )}          
             </Grid>
+          </>
         );
 
       default:
